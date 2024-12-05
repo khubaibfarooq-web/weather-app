@@ -31,7 +31,9 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "json-server": "^1.0.0-alpha.23",
     "postcss": "^8.4.36",
+    "remix": "^2.15.0",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.1.6"
+    "vite": "^5.4.11",
+    "vite-plugin-remix": "^0.2.6"
   }
 }
