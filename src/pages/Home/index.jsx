@@ -177,7 +177,7 @@ const Home = () => {
   return (
     <section className="h-">
       <div className="mx-auto container">
-        <div className="flex justify-between mb-[20px] mt-[30px]">
+        <div className="flex flex-col md:flex-row  justify-center md:justify-between mb-[20px] mt-[30px] ">
           <div>
             <p className="text-white text-[30px]">Good Morning Jhon Doe !</p>
           </div>
@@ -244,7 +244,7 @@ const Home = () => {
                 Today's Highlight
               </h3>
               <div className="flex flex-wrap">
-                <div className="w-full md:w-1/3 px-[15px]">
+                <div className="w-full md:w-1/3 px-[15px] mb-[15px] md:mb-[0px]">
                   <div className="flex flex-col gap-[10px] p-[15px] bg-white flex-grow items-center rounded-[15px]">
                     <div className="text-center">
                       <label className="text-grey">wind status</label>
@@ -257,7 +257,7 @@ const Home = () => {
                     <span>{weatherData?.windSpeed} m/s</span>
                   </div>
                 </div>
-                <div className="w-full md:w-1/3 px-[15px]">
+                <div className="w-full md:w-1/3 px-[15px] mb-[15px] md:mb-[0px]">
                   <div className="flex flex-col gap-[10px] p-[15px] bg-white flex-grow items-center rounded-[15px]">
                     <div className="text-center">
                       <label className="text-grey">humidity</label>
@@ -270,7 +270,7 @@ const Home = () => {
                     <span>{weatherData?.humidity}%</span>
                   </div>
                 </div>
-                <div className="w-full md:w-1/3 px-[15px]">
+                <div className="w-full md:w-1/3 px-[15px] mb-[15px] md:mb-[0px]">
                   <div className="flex flex-col gap-[10px] p-[15px] bg-white flex-grow items-center rounded-[15px]">
                     <div className="text-center">
                       <label className="text-grey">visibility</label>
@@ -291,7 +291,7 @@ const Home = () => {
               <h3 className="text-black text-[28px] mb-[20px]">This Week</h3>
               <div className="flex flex-wrap">
                 {forecastData.map((forecast, index) => (
-                  <div className="w-full md:w-1/5 px-[15px]">
+                  <div className="w-full md:w-1/5 px-[15px] mb-[15px] md:mb-[0px]">
                     <div
                       key={index}
                       className="flex flex-col gap-[10px] p-[15px] bg-white flex-grow items-center rounded-[15px]"
