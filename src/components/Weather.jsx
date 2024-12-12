@@ -175,7 +175,7 @@ const Weather = () => {
   }, [weatherData?.location, locationSearch]);
 
   return (
-    <section className="h-">
+    <section>
       <div className="mx-auto container">
         <div className="flex flex-col md:flex-row  justify-center md:justify-between mb-[20px] mt-[30px] ">
           <div>
@@ -313,99 +313,6 @@ const Weather = () => {
         </div>
       </div>
     </section>
-
-    // <div className="hidden">
-    //   {/* Show loading state */}
-    //   {loading ? (
-    //     <p>Loading weather data for your location...</p>
-    //   ) : (
-    //     <>
-    //       {/* Search Weather Input */}
-    //       <div className="search-section">
-    //         <input
-    //           ref={inputRef}
-    //           type="text"
-    //           placeholder="Search city weather"
-    //           className="border p-2 rounded"
-    //         />
-    //         <button
-    //           onClick={handleSearch}
-    //           className="bg-blue-500 text-white p-2 rounded ml-2"
-    //         >
-    //           Search
-    //         </button>
-    //       </div>
-
-    //       {/* Weather Section */}
-    //       <div className="weather-section mt-4">
-    //         <h2>Current Weather</h2>
-    //         <ul>
-    //           <li className="flex gap-[10px]">
-    //             <label>Location:</label>
-    //             <span>{weatherData?.location}</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Temperature:</label>
-    //             <span>{weatherData?.temperature}°C</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Wind Speed:</label>
-    //             <span>{weatherData?.windSpeed} m/s</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Humidity:</label>
-    //             <span>{weatherData?.humidity}%</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Feels Like:</label>
-    //             <span>{weatherData?.feel}°C</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Sunrise:</label>
-    //             <span>{weatherData?.sunrise}</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Sunset:</label>
-    //             <span>{weatherData?.sunset}</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Visibility:</label>
-    //             <span>{weatherData?.visibility}Km</span>
-    //           </li>
-    //           <li className="flex gap-[10px]">
-    //             <label>Icon:</label>
-    //             {weatherData?.icon && (
-    //               <img
-    //                 src={weatherData?.icon}
-    //                 alt="Weather icon"
-    //                 style={{ width: 40, height: 40 }}
-    //               />
-    //             )}
-    //           </li>
-    //         </ul>
-    //       </div>
-
-    //       {/* Forecast Section */}
-    //       <div className="forecast-section mt-4">
-    //         <h2>5-Day Forecast</h2>
-    //         <ul>
-    //           {forecastData.map((forecast, index) => (
-    //             <li key={index} className="flex gap-[10px] items-center">
-    //               <span>{getRelativeDay(forecast.dt_txt)}</span>{" "}
-    //               {/* Using the relative day function */}
-    //               <span>{Math.floor(forecast.main.temp)}°C</span>
-    //               <img
-    //                 src={allIcons[forecast.weather[0].icon] || clear_icon}
-    //                 alt="Forecast icon"
-    //                 style={{ width: 40, height: 40 }}
-    //               />
-    //             </li>
-    //           ))}
-    //         </ul>
-    //       </div>
-    //     </>
-    //   )}
-    // </div>
   );
 };
 
